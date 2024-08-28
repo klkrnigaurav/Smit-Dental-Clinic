@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+        <title>Smit Dental Clinic</title>
+    </head>
+<body>
+     <!-- Navigation Bar Information -->
+     <nav class="bg-pink-600 text-white lg:flex lg:justify-between ">
+        <span class="text-3xl flex lg:text-2xl justify-center items-center font-bold px-5 py-2 "><i> Smit
+                Dental Clinic</i></span>
+
+        <ul class="font-bold lg:px-16 py-4 flex justify-around space-x-3 lg:space-x-9  ">
+            <li class="cursor-pointer hover:text-black hover:underline flex justify-center py-2 text-lg lg:text-md"><a
+                    href="index.html">Home</a></li>
+            <li class="cursor-pointer hover:text-black hover:underline flex justify-center py-2 text-lg lg:text-md"><a
+                    href="about.html">About</a></li>
+            <li class="cursor-pointer hover:text-black hover:underline flex justify-center py-2 text-lg lg:text-md"><a
+                    href="services.html">Services</a></li>
+            <li class="cursor-pointer hover:text-black hover:underline flex justify-center py-2 text-lg lg:text-md"><a
+                    href="tel:9579650421">Call Us</a></li>
+            <li class="cursor-pointer hover:text-black hover:underline flex justify-center py-2 text-lg lg:text-md"><a
+                    href="https://maps.app.goo.gl/vhowrVSCvdepDc8H8" target="_blank">Address</a>
+            </li>
+            
+
+        </ul>
+        <span class="flex justify-center pb-3 lg:py-5 pr-4">
+            <button  class="bg-slate-900 border-2 border-white rounded-xl py-][2px] px-3 hover:bg-slate-700  lg:"><a
+                    href="form.html"> Request
+                    Consultation </a></button>
+        </span>
+
+
+    </nav>
+
+    <!-- Consultation Form Tag -->
+    <div class="flex justify-center py-7 shadow-lg">
+        <h1 class="bg-green-700 text-white  px-4 py-1 flex justify-center  text-lg font-bold rounded-lg shadow-lg"> Consultation
+            Form</h1>
+    </div>
+     <!-- Consultation Form -->
+
+     <div class="py-3 shadow-lg">
+         <h1 class="flex justify-center bg-emerald-400 font-bold py-6 px-5 text-2xl">To Know More or Learn More Please Fill Up Below Form :</h1>
+     </div>
+     <form class="px-5 flex justify-center  " id="Cform" action="connect.php" method="post">
+        <div class=" border-2 border-black rounded-md  w-96 p-5 my-5 lg:w-[500px]">
+            <label class="font-bold " for="">Patient Name : </label> <br>
+            <input type="text" class="border-2 rounded-md my-3" name="Pname" id="Pname"
+                placeholder="Characters only"><br>
+            <label class="font-bold" for="Pno">Phone No. : </label> <br>
+            <input type="tel" class="border-2 rounded-md my-3" name="Pno" id="Pno" placeholder="Must be 10 Digits"
+                maxlength="10"> <br>
+            <label class="font-bold" for="">Email : </label> <br>
+            <input type="email" class="border-2 rounded-md my-3" name="Email" id="Email"
+                placeholder="example@gmail.com"><br>
+
+            <lAbel class="font-bold"> Any Medical History :</lAbel><br>
+            <input type="text" class="border-2 rounded-md my-3 " name="Mhistory" id="Mhistory"
+                placeholder="(Suger, BP, Etc.) "><br>
+            <label class="font-bold" for="Age">Age :</label><br>
+            <input type="number" class="border-2 rounded-md my-3" name="Age" id="Age" value="Age"><br>
+
+
+            <label class="font-bold" for="Address">Address : </label><br>
+            <input type="text" class="border-2 rounded-md my-3" name="Address" id="Address" maxlength="100"
+                placeholder="address"><br>
+            <br>
+            <hr>
+            <div class="flex justify-center"><input type="submit"
+                    class="bg-green-600 py-2 px-6 mt-6  border-2 border-black text-white rounded-md font-bold hover:bg-green-500 hover:border-green-700 "
+                    value="Submit"></div>
+
+
+
+        </div>
+    </form>
+    <!-- Footer section  -->
+    <footer class="bg-black text-white px-3 py-5 flex justify-center ">
+        <h1>Copyright &copy; Smit Dental Clinic 2022</h1>
+    </footer>
+</body>
+</html>
